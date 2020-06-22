@@ -45,7 +45,7 @@ class Owner
   end
   
   def dogs
-    return Dog.all
+    return Dog.al
   end
   
   def self.all
