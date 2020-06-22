@@ -43,6 +43,7 @@ class Owner
   def cats
     @pets[:cats].each do |cat|
       cat
+    end
   end
   
   def dogs
