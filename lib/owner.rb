@@ -47,7 +47,8 @@ class Owner
   end
   
   def dogs
-    return @pets[:dogs]
+    @pets[:dogs].each do |dog|
+      dog
   end
   
   def self.all
