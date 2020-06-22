@@ -17,7 +17,7 @@ class Owner
   
   def buy_cat(cat)
     cat = Cat.new(name, self)
-    Cat.all
+    
   end
   
   def feed_cats
@@ -69,7 +69,7 @@ class Owner
     
     Cat.all.each do |cat|
       cat.mood == "nervous"
-      car.owner == nil 
+      cat.owner == nil 
     end
   end
   
