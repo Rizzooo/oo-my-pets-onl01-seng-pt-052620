@@ -42,12 +42,13 @@ class Owner
   end
   
   def cats
+    my_cats = []
     Cats.all.each do |cat|
       if cat.owner == self
-        cat
+        my_cats << cat
       end
     end
-    @cats
+    my_cats
   end
   
   def dogs
