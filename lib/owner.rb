@@ -43,7 +43,7 @@ class Owner
   
   def cats
     my_cats = []
-    Cats.all.each do |cat|
+    Cat.all.each do |cat|
       if cat.owner == self
         my_cats << cat
       end
