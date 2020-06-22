@@ -49,6 +49,7 @@ class Owner
   def dogs
     @pets[:dogs].each do |dog|
       dog
+    end
   end
   
   def self.all
