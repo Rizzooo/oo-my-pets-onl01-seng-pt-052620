@@ -44,7 +44,7 @@ class Owner
   end
   
   def cats
-    Cats.all.each do |cat|
+    Cats.self.all.each do |cat|
       if cat.owner = self
         @cats << cat
       end
