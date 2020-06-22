@@ -1,3 +1,5 @@
+require 'pry'
+
 class Owner
   @@all= []
   attr_accessor :dogs, :cats
