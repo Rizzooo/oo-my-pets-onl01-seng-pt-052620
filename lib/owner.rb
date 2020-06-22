@@ -56,6 +56,8 @@ class Owner
     @pets[:dogs]
   end
   
+  
+  
   def self.all
     @@all
   end
