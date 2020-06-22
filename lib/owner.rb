@@ -42,7 +42,9 @@ class Owner
   end
   
   def cats
-    @pets[:cats]
+    @pets[:cats].each do |cat|
+      if cat.owner = self
+        
   end
   
   def dogs
