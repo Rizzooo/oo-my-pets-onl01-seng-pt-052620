@@ -41,7 +41,7 @@ class Owner
   end
   
   def cats
-    return @pets[:cats]
+    return Cat.
   end
   
   def dogs
