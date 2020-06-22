@@ -35,10 +35,8 @@ class Owner
   end
   
   def walk_dogs
-     pets.collect do |type, indiv|
-      if type == :dogs
-        indiv.each do |dog|
-          dog.mood = "happy"
+    @pets[:dogs].collect do |dog|
+      dog.mood = "happy"
         end
       end
     end
