@@ -41,11 +41,11 @@ class Owner
   end
   
   def cats
-    @pets.dig 
+    @pets.dig(:cats)
   end
   
   def dogs
-    @pets[:dogs]
+    @pets.dig(:dogs)
   end
   
   def self.all
