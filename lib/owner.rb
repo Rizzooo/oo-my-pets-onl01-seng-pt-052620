@@ -41,7 +41,7 @@ class Owner
   end
   
   def cats
-    @pets[:cats]
+    @pets.dig 
   end
   
   def dogs
