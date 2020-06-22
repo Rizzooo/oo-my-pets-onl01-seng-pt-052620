@@ -14,10 +14,9 @@ class Owner
     "I am a #{@species}."
   end
   
-  def buy_cat(cat_name)
-    cat_name = Cat.new(name, self)
-    cat_name.Owner = self
-    @pets[:cats] << cat_name
+  def buy_cat(cat)
+    cat = Cat.new(name, self)
+    @pets[:cats] << cat
   end
   
   def feed_cats
@@ -30,10 +29,9 @@ class Owner
     end
   end
   
-  def buy_dog(dog_name)
-    dog_name = Dog.new
-    cat_name.owner = self
-    @pets[:dogs] << dog_name
+  def buy_dog(dog)
+    dog = Dog.new(name, self)
+    @pets[:dogs] << dog
   end
   
   def walk_dogs
