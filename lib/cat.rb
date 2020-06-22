@@ -1,4 +1,5 @@
 class Cat
+  
   @@all_cats = []
   attr_reader :name
   attr_accessor :mood, :owner
@@ -10,7 +11,7 @@ class Cat
     all
   end
   
-  def all
+  def self.all
     @@all_cats << self
   end
 end
