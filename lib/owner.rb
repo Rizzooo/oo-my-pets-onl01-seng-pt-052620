@@ -18,8 +18,8 @@ class Owner
   end
   
   def buy_cat(cat)
-    cat = Cat.new(name, self)
-    @cats << cat
+    #cat = Cat.new(name, self)
+    #@cats << cat
   end
   
   def feed_cats
@@ -29,8 +29,8 @@ class Owner
   end
   
   def buy_dog(dog)
-    dog = Dog.new(name, self)
-    @dogs << dog
+    #dog = Dog.new(name, self)
+    #@dogs << dog
   end
   
   def walk_dogs
@@ -46,9 +46,10 @@ class Owner
   def cats
     Cats.all.each do |cat|
       if cat.owner = self
-        cat
+        @cats << cat
       end
     end
+    @cats
   end
   
   def dogs
