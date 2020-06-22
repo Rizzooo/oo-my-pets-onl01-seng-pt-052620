@@ -21,7 +21,7 @@ class Owner
   end
   
   def feed_cats
-    @cats.each do |cat|
+    Cat.all.each do |cat|
       cat.mood = "happy"
     end
   end
@@ -32,7 +32,7 @@ class Owner
   end
   
   def walk_dogs
-    @dogs.each do |dog|
+    Dog.all.each do |dog|
       dog.mood = "happy"
     end
   end
