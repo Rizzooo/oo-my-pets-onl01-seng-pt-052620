@@ -44,7 +44,9 @@ class Owner
   def cats
     @pets[:cats].each do |cat|
       if cat.owner = self
-        
+        cat
+      end
+    end
   end
   
   def dogs
