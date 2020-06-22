@@ -17,7 +17,7 @@ class Owner
   
   def buy_cat(cat)
     cat = Cat.new(name, self)
-    
+    Cat.all
   end
   
   def feed_cats
