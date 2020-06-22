@@ -41,7 +41,8 @@ class Owner
   end
   
   def cats
-    return @pets[:cats].
+    @pets[:cats].each do |cat|
+      cat
   end
   
   def dogs
