@@ -20,12 +20,8 @@ class Owner
   end
   
   def feed_cats
-    pets.collect do |type, indiv|
-      if type == :cats
-        indiv.each do |cat|
-          cat.mood = "happy"
-        end
-      end
+    @pets[:cats].each do |cat|
+      cat.mood = "happy"
     end
   end
   
@@ -35,10 +31,8 @@ class Owner
   end
   
   def walk_dogs
-    @pets[:dogs].collect do |dog|
+    @pets[:dogs].each do |dog|
       dog.mood = "happy"
-        end
-      end
     end
   end
   
