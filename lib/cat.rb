@@ -7,6 +7,7 @@ class Cat
     @name = name
     @owner = owner
     @mood = "nervous"
+    remember
   end
   
   def remember
