@@ -52,7 +52,13 @@ class Owner
   end
   
   def dogs
-    @pets[:dogs]
+    my_dogs = []
+    Dog.all.each do |dog|
+      if dog.owner == self
+        my_dogs << dog
+      end
+    end
+    my_dogs
   end
   
   
