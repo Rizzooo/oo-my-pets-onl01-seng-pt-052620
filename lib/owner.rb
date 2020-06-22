@@ -23,6 +23,7 @@ class Owner
     Cat.all.each do |cat|
       cat.mood == "happy"
     end
+    cat.mood
   end
   
   def buy_dog(name)
@@ -33,6 +34,7 @@ class Owner
     Dog.all.each do |dog|
       dog.mood == "happy"
     end
+    dog.mood
   end
   
   def species
