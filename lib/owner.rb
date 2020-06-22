@@ -41,15 +41,11 @@ class Owner
   end
   
   def cats
-    @pets[:cats].each do |cat|
-      cat
-    end
+    @pets[:cats]
   end
   
   def dogs
-    @pets[:dogs].each do |dog|
-      dog
-    end
+    @pets[:dogs]
   end
   
   def self.all
